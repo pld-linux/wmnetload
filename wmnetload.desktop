@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=wmnetload
+Comment= net load monitor
+Comment[pl]=Monitor obci±¿enia sieci
+Exec=wmnetload
+Terminal=0
