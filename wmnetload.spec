@@ -1,5 +1,5 @@
 Summary:	A dockapp to monitor network interface usage
-Summary(pl):	Aplikacja - dok do monitorowania u¿ycia interfejsu sieciowego
+Summary(pl):	Aplikacja-dok do monitorowania u¿ycia interfejsu sieciowego
 Name:		wmnetload
 Version:	1.2
 Release:	1
@@ -7,11 +7,11 @@ License:	GPL
 Vendor:		Peter Mamishian <meem@gnu.org>
 Group:		X11/Applications/Networking
 Source0:	ftp://truffula.com/pub/%{name}-%{version}.tar.gz
+# Source0-md5:	80477b00215795c66c57274569f87969
 Source1:	%{name}.desktop
 Icon:		backlight_on.xpm
 BuildRequires:	libdockapp-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 Wmnetload is a network interface monitor dockapp for Window Maker. It
@@ -29,18 +29,20 @@ pomocy automatycznie skaluj±cego siê wykresu ostatniej aktywno¶ci
 sieci.
 
 %prep
-%setup -qn %{name}-%{version}
+%setup -q
 
 %build
-OPTFLAGS="%{rpmcflags}" CC="%{__cc}"
-./configure
+%configure
+
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_xbindir},%{_pixmapsdir},%{_applnkdir}/Network}
+install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_applnkdir}/Network}
 
-install src/wmnetload $RPM_BUILD_ROOT%{_xbindir}/wmnetload
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
+
 install xpm/classic/backlight_down.xpm $RPM_BUILD_ROOT%{_pixmapsdir}/backlight_down.xpm
 install xpm/classic/backlight_err.xpm $RPM_BUILD_ROOT%{_pixmapsdir}/backlight_err.xpm
 install xpm/classic/backlight_off.xpm $RPM_BUILD_ROOT%{_pixmapsdir}/backlight_off.xpm
@@ -53,7 +55,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README
-%attr(755,root,root)%{_bindir}/*
+%doc AUTHORS ChangeLog NEWS README
+%attr(755,root,root) %{_bindir}/*
 %{_applnkdir}/Network/wmnetload.desktop
 %{_pixmapsdir}/*.xpm
