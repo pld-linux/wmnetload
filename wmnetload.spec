@@ -1,7 +1,7 @@
 Summary:	A dockapp to monitor network interface usage.
 Summary(pl):	Aplikacja - dok do monitorowania u¿ycia interfejsu sieciowego.
 Name:		wmnetload
-Version:	1.0
+Version:	1.1
 Release:	1
 License:	GPL
 Vendor:		Peter Mamishian <meem@gnu.org>
@@ -43,12 +43,11 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_xbindir},%{_pixmapsdir},%{_applnkdir}/Network}
 
 install src/wmnetload $RPM_BUILD_ROOT%{_xbindir}/wmnetload
-install xpm/backlight_down.xpm $RPM_BUILD_ROOT%{_pixmapsdir}/backlight_down.xpm
-install xpm/backlight_err.xpm $RPM_BUILD_ROOT%{_pixmapsdir}/backlight_err.xpm
-install xpm/backlight_off.xpm $RPM_BUILD_ROOT%{_pixmapsdir}/backlight_off.xpm
-install xpm/backlight_on.xpm $RPM_BUILD_ROOT%{_pixmapsdir}/backlight_on.xpm
-install xpm/netparts.xpm $RPM_BUILD_ROOT%{_pixmapsdir}/netparts.xpm
-install xpm/parts.xpm $RPM_BUILD_ROOT%{_pixmapsdir}/parts.xpm
+install xpm/classic/backlight_down.xpm $RPM_BUILD_ROOT%{_pixmapsdir}/backlight_down.xpm
+install xpm/classic/backlight_err.xpm $RPM_BUILD_ROOT%{_pixmapsdir}/backlight_err.xpm
+install xpm/classic/backlight_off.xpm $RPM_BUILD_ROOT%{_pixmapsdir}/backlight_off.xpm
+install xpm/classic/backlight_on.xpm $RPM_BUILD_ROOT%{_pixmapsdir}/backlight_on.xpm
+install xpm/classic/parts.xpm $RPM_BUILD_ROOT%{_pixmapsdir}/parts.xpm
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Network
 
 %clean
