@@ -12,7 +12,6 @@ Icon:		backlight_on.xpm
 BuildRequires:	libdockapp-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_xbindir	%{_prefix}/bin
 
 %description
 Wmnetload is a network interface monitor dockapp for Window Maker. It
