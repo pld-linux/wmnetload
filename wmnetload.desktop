@@ -2,7 +2,7 @@
 Encoding=UTF-8
 Name=wmnetload
 Comment= net load monitor
-Comment[pl]=Monitor obci±¿enia sieci
+Comment[pl]=Monitor obciÄ…Å¼enia sieci
 Exec=wmnetload
 Terminal=false
 Type=Application
