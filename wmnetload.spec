@@ -1,5 +1,5 @@
-Summary:	A dockapp to monitor network interface usage.
-Summary(pl):	Aplikacja - dok do monitorowania u¿ycia interfejsu sieciowego.
+Summary:	A dockapp to monitor network interface usage
+Summary(pl):	Aplikacja - dok do monitorowania u¿ycia interfejsu sieciowego
 Name:		wmnetload
 Version:	1.1
 Release:	2
