@@ -6,3 +6,4 @@ Comment[pl]=Monitor obciążenia sieci
 Exec=wmnetload
 Terminal=false
 Type=Application
+# vi: encoding=utf-8
