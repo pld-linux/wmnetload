@@ -4,7 +4,7 @@ Name:		wmnetload
 Version:	1.3
 Release:	3
 License:	GPL
-Group:		X11/Applications/Networking
+Group:		X11/Window Managers/Tools
 Source0:	ftp://truffula.com/pub/%{name}-%{version}.tar.bz2
 # Source0-md5:	f2a0507cd526ce2c6977ebe9252df81c
 Source1:	%{name}.desktop
