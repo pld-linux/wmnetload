@@ -1,5 +1,5 @@
 Summary:	A dockapp to monitor network interface usage
-Summary(pl):	Aplikacja-dok do monitorowania u¿ycia interfejsu sieciowego
+Summary(pl):	Aplikacja-dok do monitorowania obci±¿enia interfejsu sieciowego
 Name:		wmnetload
 Version:	1.3
 Release:	1
@@ -21,7 +21,7 @@ network interface throughput, along with an auto-scaling graph of
 recent network activity.
 
 %description -l pl
-Wmnetload jest moniotrem interfejsu sieciowego, w postaci doku dla
+Wmnetload jest monitorem interfejsu sieciowego, w postaci doku dla
 Window Makera. Jest tak zaprojektowany, ¿eby pasowaæ do innych tego
 typu aplikacji takich jak wmcpuload czy wmmwmmon. Zaznacza kiedy
 interfejs funkcjonuje oraz wy¶wietla bie¿±c± przepustowo¶æ sieci, przy
