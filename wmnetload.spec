@@ -1,13 +1,13 @@
 Summary:	A dockapp to monitor network interface usage
 Summary(pl):	Aplikacja-dok do monitorowania u¿ycia interfejsu sieciowego
 Name:		wmnetload
-Version:	1.2
+Version:	1.3
 Release:	1
 License:	GPL
 Vendor:		Peter Mamishian <meem@gnu.org>
 Group:		X11/Applications/Networking
-Source0:	ftp://truffula.com/pub/%{name}-%{version}.tar.gz
-# Source0-md5:	80477b00215795c66c57274569f87969
+Source0:	ftp://truffula.com/pub/%{name}-%{version}.tar.bz2
+# Source0-md5:	f2a0507cd526ce2c6977ebe9252df81c
 Source1:	%{name}.desktop
 Icon:		backlight_on.xpm
 BuildRequires:	libdockapp-devel
