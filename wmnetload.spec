@@ -38,7 +38,7 @@ sieci.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_applnkdir}/Network}
+install -d $RPM_BUILD_ROOT{%{_pixmapsdir},%{_applnkdir}/DockApplets}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
@@ -48,7 +48,7 @@ install xpm/classic/backlight_err.xpm $RPM_BUILD_ROOT%{_pixmapsdir}/backlight_er
 install xpm/classic/backlight_off.xpm $RPM_BUILD_ROOT%{_pixmapsdir}/backlight_off.xpm
 install xpm/classic/backlight_on.xpm $RPM_BUILD_ROOT%{_pixmapsdir}/backlight_on.xpm
 install xpm/classic/parts.xpm $RPM_BUILD_ROOT%{_pixmapsdir}/parts.xpm
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Network
+install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -57,5 +57,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_bindir}/*
-%{_applnkdir}/Network/wmnetload.desktop
+#%{_applnkdir}/DockApplets/wmnetload.desktop
 %{_pixmapsdir}/*.xpm
