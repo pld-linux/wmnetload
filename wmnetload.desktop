@@ -4,3 +4,4 @@ Comment= net load monitor
 Comment[pl]=Monitor obci±¿enia sieci
 Exec=wmnetload
 Terminal=0
+Type=Application
