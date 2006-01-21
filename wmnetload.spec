@@ -10,7 +10,6 @@ Source0:	ftp://truffula.com/pub/%{name}-%{version}.tar.bz2
 Source1:	%{name}.desktop
 Patch0:		%{name}-config.patch
 URL:		http://freshmeat.net/projects/wmnetload
-Icon:		backlight_on.xpm
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libdockapp-devel >= 0.5.0
